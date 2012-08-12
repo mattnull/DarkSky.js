@@ -6,39 +6,41 @@
 <blockquote><ul><li>jQuery</li></ul></blockquote>
 <h2>Usage</h2>
 <blockquote>
-<pre>
-	$(function(){
+	<div class="highlight">
+		<pre>
+		$(function(){
 
-		var weather = new DarkSky('YOUR_API_KEY');
+			var weather = new DarkSky('YOUR_API_KEY');
 
-		///forecast
-		weather.forecast(40.0150, -105.2700, function(data){
-			console.log('Forecast : ', data);
+			///forecast
+			weather.forecast(40.0150, -105.2700, function(data){
+				console.log('Forecast : ', data);
+			});
+
+			//brief forecast
+			weather.briefForecast(40.0150, -105.2700, function(data){
+				console.log('Brief Forecast : ', data);
+			});
+
+			//percipitation
+			weather.percipitation([{
+				lat : 37.7750, 
+				lon : -122.4183,
+				timeStamp : (new Date()).getTime()
+			},{
+				lat : 40.0150, 
+				lon : -105.2700,
+				timeStamp  : (new Date()).getTime()
+			}], function(data){
+				console.log('Percipitation : ', data);
+			});
+
+			//interesting storms
+			weather.interestingStorms(function(data){
+				console.log('Interesting Storms : ', data);
+			});
+
 		});
-
-		//brief forecast
-		weather.briefForecast(40.0150, -105.2700, function(data){
-			console.log('Brief Forecast : ', data);
-		});
-
-		//percipitation
-		weather.percipitation([{
-			lat : 37.7750, 
-			lon : -122.4183,
-			timeStamp : (new Date()).getTime()
-		},{
-			lat : 40.0150, 
-			lon : -105.2700,
-			timeStamp  : (new Date()).getTime()
-		}], function(data){
-			console.log('Percipitation : ', data);
-		});
-
-		//interesting storms
-		weather.interestingStorms(function(data){
-			console.log('Interesting Storms : ', data);
-		});
-
-	});
-</pre>
+		</pre>
+	</div>
 </blockquote>
