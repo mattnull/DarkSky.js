@@ -5,7 +5,7 @@
 <div><p><ul><li><a href="http://jquery.com" target="_blank">jQuery</a></li></ul></p></div>
 
 <h2>Usage</h2>
-
+	<script type="text/javascript">
 	var weather = new DarkSky('YOUR_API_KEY');
 
 	///forecast
@@ -35,3 +35,4 @@
 	weather.interestingStorms(function(data){
 		console.log('Interesting Storms : ', data);
 	});
+	</script>
