@@ -1,11 +1,14 @@
-<h1>DarkSky.js</h1>
-<p>This library wraps all of the API calls for the <a href="https://developer.darkskyapp.com/docs" target="_blank">Dark Sky API</a></p>
+DarkSky.js
+==========
+This library wraps all of the API calls for the <a href="https://developer.darkskyapp.com/docs" target="_blank">Dark Sky API</a>
 
-<h2>Dependencies</h2>
-<div><p><ul><li><a href="http://jquery.com" target="_blank">jQuery</a></li></ul></p></div>
+Dependencies
+------------
+<a href="http://jquery.com" target="_blank">jQuery</a>
 
-<h2>Usage</h2>
-	<script type="text/javascript">
+Usage
+-----
+```javascript
 	var weather = new DarkSky('YOUR_API_KEY');
 
 	///forecast
@@ -35,4 +38,4 @@
 	weather.interestingStorms(function(data){
 		console.log('Interesting Storms : ', data);
 	});
-	</script>
+```
