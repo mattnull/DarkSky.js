@@ -1,13 +1,16 @@
 DarkSky.js
 ==========
+
 This library wraps all of the API calls for the <a href="https://developer.darkskyapp.com/docs" target="_blank">Dark Sky API</a>
 
 Dependencies
 ------------
+
 <a href="http://jquery.com" target="_blank">jQuery</a>
 
 Usage
 -----
+
 ```javascript
 	var weather = new DarkSky('YOUR_API_KEY');
 
@@ -39,3 +42,8 @@ Usage
 		console.log('Interesting Storms : ', data);
 	});
 ```
+
+Copyright
+---------
+
+Copyright (c) 2012 Matt Null. See LICENSE.txt for further details.

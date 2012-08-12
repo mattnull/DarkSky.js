@@ -1,3 +1,16 @@
+/**
+ * DarkSky.js
+ *
+ * JavaScript Library for the Dark Sky API
+ * https://developer.darkskyapp.com/docs
+ *
+ * Copyright 2012 Matt Null 
+ * http://mattnull.com
+ *
+ * Released under the MIT license
+ *
+ */
+
 var DarkSky = function(apiKey){	
 
 	this.apiKey = apiKey || false;
@@ -21,7 +34,7 @@ DarkSky.prototype.briefForecast = function(lat, lon, callback){
 };
 
 /**
- * params {lat : 42.7, lon : -73.6, timeStamp : 1325607100}
+ * params ex. {lat : 42.7, lon : -73.6, timeStamp : 1325607100}
  */
 DarkSky.prototype.percipitation = function(params, callback){
 	callback = callback || function(){};
