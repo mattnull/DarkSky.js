@@ -1,7 +1,7 @@
 <h1>DarkSky.js</h1>
 <p>This library wraps all of the API calls for the <a href="https://developer.darkskyapp.com/docs" target="_blank">Dark Sky API</a></p>
 
-<h2>Dependancies</h2>
+<h2>Dependencies</h2>
 <div><p><ul><li><a href="http://jquery.com" target="_blank">jQuery</a></li></ul></p></div>
 
 <h2>Usage</h2>
